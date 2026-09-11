@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Gastronómico | Chef & Creator</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fuentes modernas de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV BAR -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-accent">Chef</span>Portafolio
+    </div>
+    <nav class="nav-links" id="nav-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#platos">Mis Platos</a>
+      <a href="#acerca">Acerca de Mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="./assets/cv/CV_Nicolas_Munoz_Head_Chef.pdf" download class="btn-cv">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      CV
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- HERO / CARRUSEL SECTION -->
+  <section id="platos" class="hero-carousel">
+    <div class="carousel-container">
+      
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <img src="./assets/img/tartaro reineta.png" alt="Tartar Gourmet con Palta">
+        <div class="slide-content">
+          <span class="badge">Especialidad</span>
+          <h2>Tartar de Pesca del Día con Palta</h2>
+          <p>Capa fina de aguacate, vinagreta cítrica y brotes frescos en base marina.</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img src="./assets/img/beefvegetales.png" alt="Corte de Carne Grillado">
+        <div class="slide-content">
+          <span class="badge">Carnes</span>
+          <h2>Corte Prime a la Parrilla</h2>
+          <p>Servido con ensalada de rúcula, pepino y láminas de palta al limón.</p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img src="./assets/img/miceanplace.png" alt="Masa de Pastas Artesanales">
+        <div class="slide-content">
+          <span class="badge">Taller & Proceso</span>
+          <h2>Pastas Artesanales Hechas a Mano</h2>
+          <p>Raviolis con rellenos de autor elaborados desde cero con harina seleccionada.</p>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide">
+        <img src="./assets/img/doblesalsa.png" alt="Pasta Dual con Salsas">
+        <div class="slide-content">
+          <span class="badge">Pastas</span>
+          <h2>Sorrentinos Dúo de Salsas</h2>
+          <p>Combinación perfecta de crema panceta y boloñesa casera reducida lentamente.</p>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="slide">
+        <img src="./assets/img/rissoto mote.png" alt="Risotto y Carne Braseada">
+        <div class="slide-content">
+          <span class="badge">Alta Cocina</span>
+          <h2>Carne Braseada al Vino Red con Risotto</h2>
+          <p>Carne tierna braseada con reducción de vino tinto sobre risotto azafranado.</p>
+        </div>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="slide">
+        <img src="./assets/img/tostadon de salmon.png" alt="Bruschetta de Salmón">
+        <div class="slide-content">
+          <span class="badge">Entradas</span>
+          <h2>Tosta de Salmón Ahumado</h2>
+          <p>Pan masa madre, queso crema emulsionado, palta y tomate confitado.</p>
+        </div>
+      </div>
+
+      <!-- Slide 7 -->
+      <div class="slide">
+        <img src="./assets/img/miceanplace2.png" alt="Estación de Producción">
+        <div class="slide-content">
+          <span class="badge">Mise en Place</span>
+          <h2>Producción Artesanal Italiana</h2>
+          <p>Meticulosa preparación de cada ingrediente directo de la estación de trabajo.</p>
+        </div>
+      </div>
+
+      <!-- Slide 8 -->
+      <div class="slide">
+        <img src="./assets/img/3platos.png" alt="Trilogía de Salsas">
+        <div class="slide-content">
+          <span class="badge">Trilogía</span>
+          <h2>Degustación de Salsas Clásicas</h2>
+          <p>Salsa Blanca, Boloñesa tradicional y Mix gourmet en platos servidos.</p>
+        </div>
+      </div>
+
+      <!-- Slide 9 -->
+      <div class="slide">
+        <img src="./assets/img/fetucini pesto.png" alt="Fetuccini al Pesto con Camarones">
+        <div class="slide-content">
+          <span class="badge">Mar y Tierra</span>
+          <h2>Fetuccini Verde al Pesto con Camarones</h2>
+          <p>Camarones salteados con pesto de albahaca fresca y queso parmesano.</p>
+        </div>
+      </div>
+
+      <!-- Slide 10 -->
+      <div class="slide">
+        <img src="./assets/img/ceviche mango.jpg" alt="Ceviche y Poke Bowl">
+        <div class="slide-content">
+          <span class="badge">Ceviches & Bowls</span>
+          <h2>Ceviche Cítrico & Shrimp Bowl</h2>
+          <p>Ceviche tradicional con chips de camote junto a bowl nutritivo con camarones.</p>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#10094;</button>
+      <button class="carousel-btn next" id="nextBtn" aria-label="Siguiente">&#10095;</button>
+
+      <!-- Indicadores / Puntos -->
+      <div class="carousel-dots" id="dotsContainer"></div>
+    </div>
+  </section>
+
+  <!-- ACERCA DE MÍ -->
+  <section id="acerca" class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <span class="sub-title">Pasión por la Gastronomía</span>
+        <h2>Acerca de Mí</h2>
+        <p>I am a passionate and results-driven Head Chef & Kitchen Manager with over 8 years of hands-on experience leading high-volume culinary operations, designing creative menus, and optimizing kitchen efficiency. Holding a Diploma in Gastronomy and a unique background in Fullstack Web Development, I combine culinary creativity with strong analytical skills, precise stock control, and team leadership.
+
+Currently based in Melbourne, VIC under a Working Holiday Visa, I hold full work rights and full-time availability. I am eager to bring my expertise in high-volume line cooking, food safety compliance (HACCP), and kitchen management to dynamic culinary teams across Australia. </p>
+        
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>+5</h3>
+            <p>Años de Experiencia</p>
+          </div>
+          <div class="stat-item">
+            <h3>+10</h3>
+            <p>Platos de Autor</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Dedicación y Técnica</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="footer">
+    <p>&copy; 2026 Portafolio Gastronómico. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
