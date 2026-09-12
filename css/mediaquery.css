@@ -35,3 +35,19 @@
     cursor: pointer;
   }
 }
+
+/* modal */
+@media (max-width: 768px) {
+  /* Añadir espacio a los lados del contenido para que no toque las flechas */
+  .carousel-caption,
+  .carousel-content {
+    padding-left: 3.5rem;  /* Deja libre el área de la flecha izquierda */
+    padding-right: 3.5rem; /* Deja libre el área de la flecha derecha */
+  }
+
+  /* Reducir ligeramente el tamaño del título en móviles */
+  .carousel-title {
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+}
