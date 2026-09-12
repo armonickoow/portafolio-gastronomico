@@ -1,3 +1,5 @@
+import { initImageModal } from './modal.js';
+
 document.addEventListener('DOMContentLoaded', () => {
   const slides = document.querySelectorAll('.slide');
   const prevBtn = document.getElementById('prevBtn');
@@ -16,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (index === 0) dot.classList.add('active');
     dot.addEventListener('click', () => goToSlide(index));
     dotsContainer.appendChild(dot);
+
+    initImageModal();
   });
 
   const dots = document.querySelectorAll('.dot');

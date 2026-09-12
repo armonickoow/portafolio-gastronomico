@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio Gastronómico | Chef & Creator</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/modal.css">
   <!-- Fuentes modernas de Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,14 +38,19 @@
   <!-- HERO / CARRUSEL SECTION -->
   <section id="platos" class="hero-carousel">
     <div class="carousel-container">
+<!-- Modal   -->
+      <div id="image-modal" class="modal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modal-img" alt="Imagen ampliada">
+    </div>
       
       <!-- Slide 1 -->
       <div class="slide active">
         <img src="./assets/img/tartaro reineta.png" alt="Tartar Gourmet con Palta">
         <div class="slide-content">
           <span class="badge">Especialidad</span>
-          <h2>Tartar de Pesca del Día con Palta</h2>
-          <p>Capa fina de aguacate, vinagreta cítrica y brotes frescos en base marina.</p>
+          <h2>Day's Catch Fish Tartare with Avocado</h2>
+          <p>Fresh white fish seasoned with salt and pepper, served with a fine brunoise of cucumber, red bell pepper, and cilantro chiffonade. Emulsified with confit garlic paste, sesame oil, oyster sauce, and soy sauce, set over a traditional Peruvian leche de tigre</p>
         </div>
       </div>
 
@@ -53,8 +59,8 @@
         <img src="./assets/img/beefvegetales.png" alt="Corte de Carne Grillado">
         <div class="slide-content">
           <span class="badge">Carnes</span>
-          <h2>Corte Prime a la Parrilla</h2>
-          <p>Servido con ensalada de rúcula, pepino y láminas de palta al limón.</p>
+          <h2>Grilled Ribeye Steak with seasonal vegetables</h2>
+          <p>Tender ribeye steak, seasoned and cooked to perfection, served with a fresh selection of roasted seasonal vegetables.</p>
         </div>
       </div>
 
@@ -63,8 +69,8 @@
         <img src="./assets/img/miceanplace.png" alt="Masa de Pastas Artesanales">
         <div class="slide-content">
           <span class="badge">Taller & Proceso</span>
-          <h2>Pastas Artesanales Hechas a Mano</h2>
-          <p>Raviolis con rellenos de autor elaborados desde cero con harina seleccionada.</p>
+          <h2>Homemade panzotti </h2>
+          <p>Panzotti filled with shrimp, pineapple, and cream cheese.</p>
         </div>
       </div>
 
@@ -73,8 +79,8 @@
         <img src="./assets/img/doblesalsa.png" alt="Pasta Dual con Salsas">
         <div class="slide-content">
           <span class="badge">Pastas</span>
-          <h2>Sorrentinos Dúo de Salsas</h2>
-          <p>Combinación perfecta de crema panceta y boloñesa casera reducida lentamente.</p>
+          <h2>Grilled Chicken Breast with Sorrentinos in Bolognese and Pesto Sauce</h2>
+          <p>Tender grilled chicken breast served alongside handmade sorrentinos, topped with a rich classic bolognese sauce and finished with fresh basil pesto.</p>
         </div>
       </div>
 
@@ -137,6 +143,60 @@
           <p>Ceviche tradicional con chips de camote junto a bowl nutritivo con camarones.</p>
         </div>
       </div>
+      <!-- Slide 11 -->
+      <div class="slide">
+        <img src="./assets/img/ceviche.jpg" alt="Ceviche y Poke Bowl">
+        <div class="slide-content">
+          <span class="badge">Ceviches & Bowls</span>
+          <h2>Ceviche Cítrico & Shrimp Bowl</h2>
+          <p>Ceviche tradicional con chips de camote junto a bowl nutritivo con camarones.</p>
+        </div>
+      </div>
+      <!-- Slide 12 -->
+      <div class="slide">
+        <img src="./assets/img/entraña.jpg" alt="Ceviche y Poke Bowl">
+        <div class="slide-content">
+          <span class="badge">Ceviches & Bowls</span>
+          <h2>Ceviche Cítrico & Shrimp Bowl</h2>
+          <p>Ceviche tradicional con chips de camote junto a bowl nutritivo con camarones.</p>
+        </div>
+      </div>
+      <!-- Slide 13 -->
+      <div class="slide">
+        <img src="./assets/img/postre.jpg" alt="Ceviche y Poke Bowl">
+        <div class="slide-content">
+          <span class="badge">Ceviches & Bowls</span>
+          <h2>Ceviche Cítrico & Shrimp Bowl</h2>
+          <p>Ceviche tradicional con chips de camote junto a bowl nutritivo con camarones.</p>
+        </div>
+      </div>
+      <!-- Slide 14 -->
+      <div class="slide">
+        <img src="./assets/img/pulpo.jpg" alt="Ceviche y Poke Bowl">
+        <div class="slide-content">
+          <span class="badge">Ceviches & Bowls</span>
+          <h2>Ceviche Cítrico & Shrimp Bowl</h2>
+          <p>Ceviche tradicional con chips de camote junto a bowl nutritivo con camarones.</p>
+        </div>
+      </div>
+      <!-- Slide 15 -->
+      <div class="slide">
+        <img src="./assets/img/purezapallo.jpg" alt="Ceviche y Poke Bowl">
+        <div class="slide-content">
+          <span class="badge">Ceviches & Bowls</span>
+          <h2>Ceviche Cítrico & Shrimp Bowl</h2>
+          <p>Ceviche tradicional con chips de camote junto a bowl nutritivo con camarones.</p>
+        </div>
+      </div>
+      <!-- Slide 16 -->
+      <div class="slide">
+        <img src="./assets/img/tostadonhummus.png" alt="Ceviche y Poke Bowl">
+        <div class="slide-content">
+          <span class="badge">Ceviches & Bowls</span>
+          <h2>Ceviche Cítrico & Shrimp Bowl</h2>
+          <p>Ceviche tradicional con chips de camote junto a bowl nutritivo con camarones.</p>
+        </div>
+      </div>
 
       <!-- Controles -->
       <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#10094;</button>
@@ -180,6 +240,6 @@ Currently based in Melbourne, VIC under a Working Holiday Visa, I hold full work
     <p>&copy; 2026 Portafolio Gastronómico. Todos los derechos reservados.</p>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="./js/app.js" type="module"></script>
 </body>
 </html>
