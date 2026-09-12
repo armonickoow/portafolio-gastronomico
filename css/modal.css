@@ -56,3 +56,43 @@
 .slide img {
   cursor: pointer;
 }
+
+/* Botones de navegación del modal */
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 30px;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+  user-select: none;
+  z-index: 1001;
+}
+
+.modal-nav:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #c5a059; /* Tu color de acento */
+}
+
+.modal-prev {
+  left: 20px;
+}
+
+.modal-next {
+  right: 20px;
+}
+
+/* Ajuste responsive para pantallas pequeñas */
+@media (max-width: 600px) {
+  .modal-nav {
+    padding: 10px 14px;
+    font-size: 20px;
+  }
+  .modal-prev { left: 10px; }
+  .modal-next { right: 10px; }
+}
