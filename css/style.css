@@ -110,7 +110,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -2rem 0 2rem 0; /* Reduce el espacio masivo vaco arrastrndolo un poco hacia arriba */
+  margin: 5rem 0; /* Reduce el espacio masivo vaco arrastrndolo un poco hacia arriba */
   opacity: 0.8;
   z-index: 10;
   position: relative;

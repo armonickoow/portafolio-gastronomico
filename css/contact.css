@@ -323,7 +323,7 @@
 
 .contact-section {
   text-align: center;
-  padding-top: 2rem; /* Balancear el espacio */
+  padding-top: 0; /* Balancear el espacio */
 }
 .contact-section h2 {
   font-family: 'Playfair Display', serif;
