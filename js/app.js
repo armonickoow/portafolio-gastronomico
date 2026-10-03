@@ -243,13 +243,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (form) {
     form.addEventListener('submit', async (e) => {
-      e.preventDefault(); // Evita que la pgina cambie de pestaa o recargue
+      e.preventDefault();
       
       const data = new FormData(form);
       const btn = form.querySelector('.btn-submit');
       const originalBtnText = btn.innerText;
       
-      // Cambiamos el texto del botn mientras se enva
       btn.innerText = 'Sending...';
       btn.disabled = true;
 
@@ -263,25 +262,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (response.ok) {
-          // El envo fue exitoso
-          form.reset(); // Vaca todas las casillas
-          statusMsg.style.display = 'block'; // Muestra el mensaje de xito
-          
-          // Ocultar el mensaje despus de 5 segundos
-          setTimeout(() => {
-            statusMsg.style.display = 'none';
-          }, 5000);
+          form.reset();
+          statusMsg.style.display = 'block';
+          setTimeout(() => { statusMsg.style.display = 'none'; }, 5000);
         } else {
-          // Hubo un error de parte de Formspree
-          alert('Oops! There was a problem submitting your form.');
+          const err = await response.json();
+          alert('Formspree says: ' + (err.errors ? err.errors.map(e => e.message).join(', ') : 'Unknown error'));
         }
       } catch (error) {
-        alert('Oops! There was a problem submitting your form.');
+        alert('Network error. Please try again.');
       }
 
-      // Devolver el botn a la normalidad
       btn.innerText = originalBtnText;
       btn.disabled = false;
     });
   }
 });
+
