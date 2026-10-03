@@ -28,13 +28,13 @@
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 3.5rem;
 }
 
 .nav-links a {
   color: var(--text-main);
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1.05rem; letter-spacing: 0.5px; text-transform: uppercase;
   font-weight: 400;
   transition: var(--transition);
 }
@@ -77,4 +77,44 @@
   width: 25px;
   height: 2px;
   background: var(--text-main);
+}
+/* ==== ELEGANT NAVBAR INTERACTIONS ==== */
+html {
+  /* Compensa el alto del navbar fijo al hacer scroll hacia las secciones */
+  scroll-padding-top: 90px;
+}
+
+.nav-links a {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* Línea animada debajo de los links */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Efecto visual al hacer clic (Scale down) */
+.nav-links a:active {
+  transform: scale(0.92);
+  transition: transform 0.1s;
+}
+
+/* Efecto de entrada suave para las secciones (opcional si usaran intersection observer, pero lo dejamos preparado) */
+section {
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }

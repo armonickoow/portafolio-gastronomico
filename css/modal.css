@@ -96,3 +96,33 @@
   .modal-prev { left: 10px; }
   .modal-next { right: 10px; }
 }
+/* ==== ELEGANT MODAL UPGRADES ==== */
+.modal {
+  background-color: rgba(5, 5, 5, 0.85) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+}
+
+.modal-content {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
+  border-radius: 12px !important;
+}
+
+.modal-nav {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50% !important;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-nav:hover {
+  background: var(--accent-color) !important;
+  color: #000 !important;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+  transform: translateY(-50%) scale(1.1) !important;
+}

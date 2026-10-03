@@ -131,3 +131,53 @@
   width: 25px;
   border-radius: 10px;
 }
+
+/* ==== ELEGANT CAROUSEL UPGRADES ==== */
+.slide img {
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+.slide:hover img {
+  transform: scale(1.05) !important;
+}
+
+.slide-content {
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 50%, transparent 100%) !important;
+  backdrop-filter: blur(2px);
+  border-radius: 0 0 15px 15px;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.badge {
+  background: rgba(212, 175, 55, 0.15) !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.carousel-btn {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  transition: all 0.4s ease;
+}
+
+.carousel-btn:hover {
+  background: rgba(212, 175, 55, 0.8) !important;
+  transform: translateY(-50%) scale(1.1) !important;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Modern Dots */
+.dot {
+  width: 25px !important;
+  height: 4px !important;
+  border-radius: 2px !important;
+  background: rgba(255,255,255,0.2) !important;
+  transition: all 0.3s ease !important;
+}
+.dot.active {
+  width: 40px !important;
+  background: var(--accent-color) !important;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
+}
